@@ -168,13 +168,23 @@ service guacd start
 
 # Add service clover
 
-cp UpdateGuacamole.war  /var/lib/${TOMCAT}/webapps/UpdateGuacamole.war
-cp login.jsp /var/lib/${TOMCAT}/webapps/guacamole/
-cp index.html /var/lib/${TOMCAT}/webapps/guacamole/
-cp index2.html /var/lib/${TOMCAT}/webapps/guacamole/
-cp index3.html /var/lib/${TOMCAT}/webapps/guacamole/
-cp jquery.min.js /var/lib/${TOMCAT}/webapps/guacamole/
-cp please-wait.gif /var/lib/${TOMCAT}/webapps/guacamole/images/
+wget https://github.com/procangroup/clover-guacamole/blob/master/UpdateGuacamole.war
+mv UpdateGuacamole.war  /var/lib/${TOMCAT}/webapps/UpdateGuacamole.war
+wget https://github.com/procangroup/clover-guacamole/blob/master/index.html
+mv index.html /var/lib/${TOMCAT}/webapps/guacamole/
+wget https://github.com/procangroup/clover-guacamole/blob/master/index2.html
+mv index2.html /var/lib/${TOMCAT}/webapps/guacamole/
+wget https://github.com/procangroup/clover-guacamole/blob/master/index3.html
+mv index3.html /var/lib/${TOMCAT}/webapps/guacamole/
+wget https://github.com/procangroup/clover-guacamole/blob/master/jquery.min.js
+mv jquery.min.js /var/lib/${TOMCAT}/webapps/guacamole/
+wget https://github.com/procangroup/clover-guacamole/blob/master/login.jsp
+mv login.jsp /var/lib/${TOMCAT}/webapps/guacamole/
+wget https://github.com/procangroup/clover-guacamole/blob/master/please-wait.gif
+mv please-wait.gif /var/lib/${TOMCAT}/webapps/guacamole/images/
+
+mkdir /home/upload
+chmod -R 777 /home/upload
 
 # Cleanup
 rm -rf guacamole-*
