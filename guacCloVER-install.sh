@@ -168,19 +168,19 @@ service guacd start
 
 # Add service clover
 
-wget https://github.com/procangroup/clover-guacamole/raw/master/UpdateGuacamole.war
+wget https://github.com/procangroup/clover-guacamole/raw/master/AccessBroker/UpdateGuacamole.war
 mv UpdateGuacamole.war  /var/lib/${TOMCAT}/webapps/UpdateGuacamole.war
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/index.html
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/index.html
 mv index.html /var/lib/${TOMCAT}/webapps/guacamole/
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/index2.html
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/index2.html
 mv index2.html /var/lib/${TOMCAT}/webapps/guacamole/
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/index3.html
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/index3.html
 mv index3.html /var/lib/${TOMCAT}/webapps/guacamole/
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/jquery.min.js
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/jquery.min.js
 mv jquery.min.js /var/lib/${TOMCAT}/webapps/guacamole/
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/login.jsp
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/login.jsp
 mv login.jsp /var/lib/${TOMCAT}/webapps/guacamole/
-wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/please-wait.gif
+wget https://raw.githubusercontent.com/procangroup/clover-guacamole/master/AccessBroker/please-wait.gif
 mv please-wait.gif /var/lib/${TOMCAT}/webapps/guacamole/images/
 
 mkdir /home/upload
