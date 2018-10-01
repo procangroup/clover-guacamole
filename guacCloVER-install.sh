@@ -188,5 +188,5 @@ chmod -R 777 /home/upload
 
 # Cleanup
 rm -rf guacamole-*
-
+sudo apt-get install ffmpeg libav-tools x264 x265
 echo -e "Installation Complete\nhttp://localhost:8080/guacamole/\nDefault login guacadmin:guacadmin\nBe sure to change the password."
